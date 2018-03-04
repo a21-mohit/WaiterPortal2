@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:contentPadding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/list_item_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignBaseline="@+id/qtyeditText"
+            android:layout_alignBottom="@+id/qtyeditText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/remove" />
+
+        <EditText
+            android:id="@+id/qtyeditText"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/decc"
+            android:layout_alignBottom="@+id/decc"
+            android:layout_toEndOf="@+id/decc"
+            android:layout_toRightOf="@+id/decc"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:focusedByDefault="false"
+            android:gravity="center"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/incc"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/qtyeditText"
+            android:layout_alignBottom="@+id/qtyeditText"
+            android:layout_toEndOf="@+id/qtyeditText"
+            android:layout_toRightOf="@+id/qtyeditText"
+            android:text="@string/plus" />
+
+        <Button
+            android:id="@+id/decc"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/list_item_string"
+            android:layout_marginTop="13dp"
+            android:text="@string/minus" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
